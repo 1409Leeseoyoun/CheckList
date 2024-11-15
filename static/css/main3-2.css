@@ -38,7 +38,12 @@ header {
     width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: initial !important;
 }
 
@@ -53,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 118.09px;
+    /* height: 118.09px; */
     pointer-events: auto;
 }
 
@@ -149,8 +154,8 @@ img {
     padding: 0;
 }
 
-.name > input,
-.define > input {
+.name>input,
+.define>input {
     width: 90%;
     background-color: #00000000;
     border: none;
@@ -288,7 +293,8 @@ footer {
     }
 
     header {
-        padding: 10px;
+        padding: 20px 0;
+        margin-top: 10px;
     }
 
     .bi-arrow-left-square::before,
@@ -296,12 +302,16 @@ footer {
         font-size: 30px;
     }
 
+    .bi-arrow-left-square {
+        margin-left: 5px;
+    }
+
     .title-content {
         padding: 0;
     }
 
     .shadows-into-light-regular {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .super-content {
@@ -315,18 +325,18 @@ footer {
         justify-content: center;
         row-gap: 5px;
         border-radius: 10px;
-        height: 270px;
+        height: 260px;
     }
 
     .re-choice {
         flex-direction: column;
-        margin-bottom: 15px;
+        margin-bottom: 18px;
     }
 
     img {
         width: 200px;
         opacity: 0.6;
-        margin-top: 10px;
+        /* margin-top: 10px; */
     }
 
     .category {
@@ -350,9 +360,13 @@ footer {
         background-color: transparent !important;
     }
 
-    .name > input,
-    .define > input {
-        font-size: 17px;
+    .define {
+        padding: 0 4px 0 6px;
+    }
+
+    .name>input,
+    .define>input {
+        font-size: 15px;
     }
 
     .bi-calendar-plus-fill::before {
