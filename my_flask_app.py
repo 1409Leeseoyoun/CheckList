@@ -177,7 +177,6 @@ def update():
             user_data=user_data
         )  # 데이터를 HTML 템플릿에 전달하여 렌더링
 
-    
     else:
         data = request.get_json()  # 클라이언트에서 보낸 JSON 데이터 받기
         category = data.get("category")
@@ -196,6 +195,7 @@ def update():
         db.commit()  # 데이터 저장
 
         return jsonify(success=True, message="Data updated successfully")  # 성공 메시지 반환
+    
 
 @app.route("/save_data", methods=["POST"])  # 데이터를 저장하는 라우트
 def save_data():
@@ -256,4 +256,7 @@ def main3_1():
 
 if __name__ == "__main__":  # 이 파일이 실행될 때
     init_db()  # 데이터베이스 초기화
-    app.run(host="0.0.0.0", debug=True, port=5500)  # 앱 실행 (0.0.0.0으로 실행하여 외부 접근 허용)
+    app.run(host="0.0.0.0", debug=True, port=5000)  # 앱 실행 (0.0.0.0으로 실행하여 외부 접근 허용)
+
+
+## 수정 반영 체크
