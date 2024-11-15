@@ -156,6 +156,46 @@ def main3_2():
 
     return render_template("main3-2.html", category=category)  # 카테고리 데이터를 HTML 템플릿에 전달
 
+@app.route("/update", methods=["GET", "PUT"])
+def update():
+    if "username" not in session:  # 로그인되지 않으면 로그인 페이지로 리디렉션
+        return redirect(url_for("index"))
+    
+    user_data_id = request.args.get("user_data_id")
+
+    if request.method =="GET":
+        db = get_db()
+        cur = db.execute(
+            "SELECT * FROM user_data WHERE id = ?",
+            (user_data_id,),
+        )
+        user_data = cur.fetchone()  # 사용자 데이터 가져오기
+        logging.info(f"user_data: {user_data}")
+        return render_template(
+            "update.html", 
+            category=user_data["category"] if user_data else None, 
+            user_data=user_data
+        )  # 데이터를 HTML 템플릿에 전달하여 렌더링
+
+    
+    else:
+        data = request.get_json()  # 클라이언트에서 보낸 JSON 데이터 받기
+        category = data.get("category")
+        content = data.get("content")
+        date = data.get("date")
+        user_data_id = data.get("user_data_id")
+
+        if not category or not content or not date:  # 모든 필드가 입력되지 않으면 오류 반환
+            return jsonify(success=False, message="모든 필드를 입력해 주세요.")
+
+        db = get_db()
+        db.execute(
+            "UPDATE user_data SET username=?, category=?, content=?, date=? WHERE id=?",
+            (session["username"], category, content, date, user_data_id),
+        )
+        db.commit()  # 데이터 저장
+
+        return jsonify(success=True, message="Data updated successfully")  # 성공 메시지 반환
 
 @app.route("/save_data", methods=["POST"])  # 데이터를 저장하는 라우트
 def save_data():
