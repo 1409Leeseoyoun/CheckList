@@ -54,7 +54,8 @@ main {
     position: fixed;
     top: 45%;
     left: 50%;
-    transform: translate(-50%, -50%);  /* 요소 크기의 절반만큼 이동하여 정확히 중앙에 배치 */
+    transform: translate(-50%, -50%);
+    /* 요소 크기의 절반만큼 이동하여 정확히 중앙에 배치 */
     font-family: "Grandiflora One", serif;
     font-size: 20px;
     color: #0000009b;
@@ -103,6 +104,7 @@ main {
     column-gap: 20px;
     margin-right: 20px;
 }
+
 .select {
     display: inline-block;
     position: relative;
@@ -135,8 +137,9 @@ a:hover {
     background-color: #ffffff29;
 }
 
-a > p,
-.bi-trash, .bi-pencil {
+a>p,
+.bi-trash,
+.bi-pencil {
     color: #fff;
     font-size: 14px;
     margin: 0;
@@ -232,7 +235,6 @@ img {
         display: flex;
         flex-direction: column;
         width: 100%;
-        row-gap: 5px;
         margin: 5px 0;
     }
 
@@ -282,7 +284,7 @@ img {
 
     .tag2 {
         font-size: 27px;
-        margin: 10px 15px;
+        margin: 10px 15px 6px 15px;
     }
 
     .plus {
@@ -295,10 +297,13 @@ img {
 }
 
 @media (max-width: 450px) {
+    header {
+        margin-bottom: 10px;
+    }
 
     .shadows-into-light-regular {
-        font-size: 40px;
-        margin: 20px 0;
+        font-size: 35px;
+        margin: 0;
     }
 
     main {
@@ -310,7 +315,7 @@ img {
     }
 
     .sign {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .content2 {
@@ -323,7 +328,7 @@ img {
     }
 
     img {
-        width: 100px;
+        width: 95px;
     }
 
     .text-content2 {
@@ -331,12 +336,14 @@ img {
     }
 
     .name2>p {
-        font-size: 16px;
+        font-size: 15px;
         margin: 5px 0 0 0;
     }
 
     .category-info2 {
         column-gap: 4px;
+        justify-content: center;
+        align-items: center;
     }
 
     .category-info2>p {
@@ -345,5 +352,45 @@ img {
 
     .bi-plus-circle-fill {
         font-size: 45px;
+    }
+
+    .select {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .option-content {
+        position: absolute;
+        top: 25px;
+        left: -90px;
+        width: 90px;
+    }
+
+    .re-input,
+    .delet {
+        padding: 7px;
+    }
+
+    .bi-plus-circle-fill {
+        font-size: 45px;
+    }
+
+    .select {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .option-content {
+        position: absolute;
+        top: 25px;
+        left: -90px;
+        width: 90px;
+    }
+
+    .re-input,
+    .delet {
+        padding: 7px;
     }
 }

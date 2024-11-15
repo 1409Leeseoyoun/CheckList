@@ -26,3 +26,9 @@ body {
     opacity: 0;
     transition: opacity 1s ease;
 }
+ 
+@media (max-width: 450px) {
+    .shadows-into-light-regular {
+        font-size: 45px;
+    }
+}
