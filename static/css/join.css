@@ -7,7 +7,8 @@
     font-style: normal;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
 }
@@ -86,6 +87,7 @@ input::placeholder {
 .info {
     display: flex;
     justify-content: center;
+    align-items: center;
     color: #000000;
     font-size: 14px;
 }
@@ -105,9 +107,11 @@ input::placeholder {
     header {
         padding: 10px;
     }
+
     .shadows-into-light-regular {
         font-size: 37px;
     }
+
     .content {
         margin-bottom: 140px;
     }

@@ -38,7 +38,12 @@ header {
     width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: initial !important;
 }
 
@@ -149,8 +154,8 @@ img {
     padding: 0;
 }
 
-.name > input,
-.define > input {
+.name>input,
+.define>input {
     width: 90%;
     background-color: #00000000;
     border: none;
@@ -301,7 +306,7 @@ footer {
     }
 
     .shadows-into-light-regular {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .super-content {
@@ -315,7 +320,7 @@ footer {
         justify-content: center;
         row-gap: 5px;
         border-radius: 10px;
-        height: 270px;
+        height: 260px;
     }
 
     .re-choice {
@@ -350,9 +355,13 @@ footer {
         background-color: transparent !important;
     }
 
-    .name > input,
-    .define > input {
-        font-size: 17px;
+    .define {
+        padding: 0 4px;
+    }
+
+    .name>input,
+    .define>input {
+        font-size: 15px;
     }
 
     .bi-calendar-plus-fill::before {

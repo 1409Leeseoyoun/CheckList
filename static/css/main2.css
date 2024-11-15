@@ -232,7 +232,6 @@ img {
         display: flex;
         flex-direction: column;
         width: 100%;
-        row-gap: 5px;
         margin: 5px 0;
     }
 
@@ -282,7 +281,7 @@ img {
 
     .tag2 {
         font-size: 27px;
-        margin: 10px 15px;
+        margin: 10px 15px 6px 15px;
     }
 
     .plus {
@@ -297,7 +296,7 @@ img {
 @media (max-width: 450px) {
 
     .shadows-into-light-regular {
-        font-size: 40px;
+        font-size: 35px;
         margin: 20px 0;
     }
 
@@ -310,7 +309,7 @@ img {
     }
 
     .sign {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .content2 {
@@ -323,7 +322,7 @@ img {
     }
 
     img {
-        width: 100px;
+        width: 95px;
     }
 
     .text-content2 {
@@ -331,12 +330,14 @@ img {
     }
 
     .name2>p {
-        font-size: 16px;
+        font-size: 15px;
         margin: 5px 0 0 0;
     }
 
     .category-info2 {
         column-gap: 4px;
+        justify-content: center;
+        align-items: center;
     }
 
     .category-info2>p {
