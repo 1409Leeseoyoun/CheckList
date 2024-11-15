@@ -371,4 +371,26 @@ img {
     .delet {
         padding: 7px;
     }
+
+    .bi-plus-circle-fill {
+        font-size: 45px;
+    }
+
+    .select {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .option-content {
+        position: absolute;
+        top: 25px;
+        left: -90px;
+        width: 90px;
+    }
+
+    .re-input,
+    .delet {
+        padding: 7px;
+    }
 }
