@@ -378,10 +378,12 @@ footer {
 }
 
 @media (max-width: 360px) {
+
     .bi-arrow-left-square::before,
     .bi-check-square::before {
         font-size: 25px;
     }
+
     .super-content {
         justify-content: center;
         align-items: center;
@@ -437,9 +439,11 @@ footer {
     .bi-arrow-through-heart::before {
         font-size: 20px;
     }
+
     .bi-calendar-plus-fill::before {
         font-size: 19px;
     }
+
     footer {
         padding: 30px;
     }
