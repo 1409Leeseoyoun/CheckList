@@ -376,3 +376,67 @@ footer {
         font-size: 25px;
     }
 }
+
+@media (max-width: 360px) {
+    .bi-arrow-left-square::before,
+    .bi-check-square::before {
+        font-size: 25px;
+    }
+    .super-content {
+        justify-content: center;
+        align-items: center;
+        row-gap: 15px;
+    }
+
+    .content {
+        width: 250px;
+        height: 240px;
+    }
+
+    .re-choice {
+        margin-bottom: 13px;
+    }
+
+    img {
+        width: 180px;
+    }
+
+    .tag2 {
+        font-size: 35px;
+    }
+
+    .category {
+        font-size: 16px;
+    }
+
+    .bi-caret-down-fill {
+        font-size: 20px;
+    }
+
+    .bi-arrow-left-square {
+        font-size: 25px;
+    }
+
+    .name-content,
+    .define-content {
+        width: 85%;
+    }
+
+    .name>input,
+    .define>input,
+    input::placeholder {
+        font-size: 13px;
+    }
+
+    .bi-suit-heart::before,
+    .bi-cake-fill::before,
+    .bi-pencil-square::before,
+    .bi-suit-heart-fill::before,
+    .bi-journal::before,
+    .bi-arrow-through-heart::before {
+        font-size: 20px;
+    }
+    .bi-calendar-plus-fill::before {
+        font-size: 19px;
+    }
+}

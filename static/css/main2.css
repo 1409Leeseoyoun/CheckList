@@ -315,7 +315,7 @@ img {
     }
 
     .sign {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .content2 {
@@ -324,7 +324,7 @@ img {
     }
 
     .img-content {
-        height: 100px;
+        height: 95px;
     }
 
     img {
@@ -336,7 +336,85 @@ img {
     }
 
     .name2>p {
-        font-size: 15px;
+        font-size: 16px;
+        margin: 5px 0 0 0;
+    }
+
+    .category-info2 {
+        column-gap: 4px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .category-info2>p {
+        font-size: 13px;
+    }
+
+    .bi-plus-circle-fill {
+        font-size: 45px;
+    }
+
+    .select {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .option-content {
+        position: absolute;
+        top: 25px;
+        left: -90px;
+        width: 90px;
+    }
+
+    .re-input,
+    .delet {
+        padding: 7px;
+    }
+
+    .bi-plus-circle-fill {
+        font-size: 45px;
+    }
+
+    .select {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .option-content {
+        position: absolute;
+        top: 25px;
+        left: -90px;
+        width: 90px;
+    }
+
+    .re-input,
+    .delet {
+        padding: 7px;
+    }
+}
+
+@media (max-width: 360px) {
+    .content2 {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .img-content {
+        height: 90px;
+    }
+
+    img {
+        width: 90px;
+    }
+
+    .text-content2 {
+        row-gap: 1px;
+    }
+
+    .name2>p {
+        font-size: 14px;
         margin: 5px 0 0 0;
     }
 
@@ -348,6 +426,11 @@ img {
 
     .category-info2>p {
         font-size: 11px;
+    }
+
+    .tag2 {
+        font-size: 24px;
+        margin: 10px 15px 3px;
     }
 
     .bi-plus-circle-fill {
