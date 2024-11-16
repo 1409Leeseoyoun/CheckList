@@ -224,6 +224,9 @@ img {
 }
 
 @media (max-width: 360px) {
+    .container {
+        margin-top: 15px;
+    }
     img {
         width: 110px;
         height: auto;

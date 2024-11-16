@@ -115,3 +115,13 @@ input::placeholder {
         margin-bottom: 140px;
     }
 }
+
+@media (max-width: 360px) {
+    .content {
+        margin-bottom: 120px;
+        row-gap: 10px;
+    }
+    .info>p {
+        margin: 0;
+    }
+}
