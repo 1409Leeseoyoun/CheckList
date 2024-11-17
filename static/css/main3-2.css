@@ -137,6 +137,7 @@ img {
     border-bottom: 1px solid #000;
     justify-content: space-between;
     width: 97%;
+    height: 40px;
     padding: 0 7px;
 }
 
@@ -162,7 +163,7 @@ img {
     font-size: 18px;
     font-family: 'Grandiflora One' serif;
     font-weight: bold;
-    color: #000000cb;
+    color: #000000;
     padding: 0;
 }
 
@@ -262,7 +263,7 @@ footer {
 
 @media (max-width: 800px) {
     main {
-        margin: 0 0 6% 0;
+        margin: 0;
     }
 
     .super-content {
@@ -294,6 +295,10 @@ footer {
     header {
         padding: 20px 0;
         margin-top: 10px;
+    }
+
+    main {
+        margin: 0 0 3% 0;
     }
 
     .bi-arrow-left-square::before,
@@ -388,7 +393,6 @@ footer {
         justify-content: center;
         align-items: center;
         row-gap: 20px;
-        margin-bottom: 10px;
     }
 
     .content {
@@ -425,9 +429,23 @@ footer {
         width: 85%;
     }
 
+    .name,
+    .define {
+        height: 30px;
+    }
+
     .name>input,
     .define>input,
     input::placeholder {
+        font-size: 13px;
+    }
+
+    #date-love,
+    #date-birthday,
+    #date-test,
+    #date-marriage,
+    #date-task,
+    #date-fan {
         font-size: 13px;
     }
 
