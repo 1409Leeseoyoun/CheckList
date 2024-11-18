@@ -400,6 +400,10 @@ img {
         border-radius: 10px;
     }
 
+    .sign {
+        font-size: 15px;
+    }
+
     .img-content {
         height: 90px;
     }
