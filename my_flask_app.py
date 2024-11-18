@@ -253,7 +253,6 @@ def main3_1():
 
     return render_template("main3-1.html")  # main3-1 템플릿을 렌더링
 
-
 if __name__ == "__main__":  # 이 파일이 실행될 때
     init_db()  # 데이터베이스 초기화
     app.run(host="0.0.0.0", debug=True, port=5000)  # 앱 실행 (0.0.0.0으로 실행하여 외부 접근 허용)
